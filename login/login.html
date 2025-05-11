@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styleSheet/reset.css">
+    <link rel="stylesheet" href="./styleSheet/login.css">
+    <title>로그인</title>
+  </head>
+  <body>
+    <main>
+      <form id="login-form">
+        <a class="logo" href="../index.html"></a>
+        <div class="box">
+          <label for="email" class="word">이메일</label>
+          <div>
+            <input type="email" id="email" placeholder="이메일을 입력해주세요">
+            <div class="error-message" id="email-error"></div>
+          </div>
+        </div>
+        <div class="box">
+          <label for="password" class="word">비밀번호</label>
+          <div class="password-box">
+            <input type="password" id="password" placeholder="비밀번호를 입력해주세요" >
+            <img src="./image/close eye.png"  id="seebutton">
+            <div class="error-message" id="password-error"></div>
+          </div>
+        </div>
+        <button type="submit" class="login-button">로그인</button>
+        <div class="easy-login">
+          <p>간편 로그인하기</p>
+          <div class="link-button">
+            <a href="http://www.google.com/"><img src="./image/google.png"></a>
+            <a href="http://www.kakaocorp.com/page/"><img src="./image/kakao.png"></a>
+          </div>
+        </div>
+        <div class="signup">
+          <p>판다마켓이 처음이신가요? <a class="signup-link" href="./signup.html">회원가입</a></p>
+        </div>
+      </form>
+    </main>
+    <div id="custom-alert" class="alert-hidden">
+      <div class="alert-box">
+        <p id="alert-message">error</p>
+        <button type="button" id="alert-button">확인</button>
+      </div>
+    </div>
+    <script src="./login.js"></script>
+  </body>
+</html>
